@@ -39,8 +39,10 @@ a viewController contain multi page。
 ###Usage
 
 ```objc
+//创建你自己的视图控制器
 MyOrderViewController *orderVC = [[MyOrderViewController alloc]init];
 orderVC.selectedBtnIndex = 7;
+//提供titles数组
 PMBaseViewController * baseVC = [[PMBaseViewController alloc]initWithTitles:titles viewControllers:orderVC];
 [self.navigationController pushViewController:baseVC animated:YES];
 ```
